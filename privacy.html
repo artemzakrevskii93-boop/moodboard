@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy – AI Moodboard | Artem Zakrevskii</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:  #0a0a0a;
+      --bg2: #111;
+      --bdr: #222;
+      --tx:  #ffffff;
+      --tx2: #cacaca;
+      --tx3: #888;
+      --ac:  #007aff;
+      --ac2: #3395ff;
+    }
+
+    body {
+      background: var(--bg);
+      font-family: "Noto Sans", sans-serif;
+      font-size: 15px;
+      color: var(--tx2);
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    a { color: var(--ac); text-decoration: none; }
+    a:hover { color: var(--ac2); }
+
+    /* ── Nav ─────────────────────────────────────────────── */
+    nav {
+      position: sticky; top: 0;
+      background: rgba(10,10,10,.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--bdr);
+      padding: 14px 32px;
+      display: flex; align-items: center; justify-content: space-between;
+      z-index: 10;
+    }
+    .nav-logo { color: var(--tx); font-weight: 600; font-size: 14px; letter-spacing: .04em; }
+    .nav-back  { font-size: 13px; color: var(--tx3); }
+    .nav-back:hover { color: var(--tx2); }
+
+    /* ── Content ─────────────────────────────────────────── */
+    .wrap {
+      max-width: 680px; margin: 0 auto;
+      padding: 60px 32px 80px;
+    }
+
+    .doc-header { margin-bottom: 44px; }
+    .doc-header h1 {
+      font-size: 28px; font-weight: 600;
+      color: var(--tx); margin-bottom: 8px;
+    }
+    .doc-header .meta {
+      font-size: 13px; color: var(--tx3);
+    }
+
+    h2 {
+      font-size: 16px; font-weight: 600;
+      color: var(--tx); margin: 36px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--bdr);
+    }
+
+    p { margin-bottom: 12px; font-size: 14px; }
+
+    ul {
+      list-style: none;
+      margin: 0 0 12px;
+      display: flex; flex-direction: column; gap: 6px;
+    }
+    ul li {
+      font-size: 14px; color: var(--tx2);
+      padding-left: 16px; position: relative;
+    }
+    ul li::before {
+      content: "–";
+      position: absolute; left: 0;
+      color: var(--tx3);
+    }
+
+    .highlight {
+      background: rgba(0,122,255,.07);
+      border: 1px solid rgba(0,122,255,.2);
+      border-radius: 6px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px; color: var(--tx2);
+    }
+
+    .contact-box {
+      background: var(--bg2);
+      border: 1px solid var(--bdr);
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 16px;
+    }
+    .contact-box p { margin: 0; font-size: 14px; }
+
+    footer {
+      border-top: 1px solid var(--bdr);
+      padding: 24px 32px;
+      text-align: center;
+      font-size: 13px; color: var(--tx3);
+    }
+    footer a { color: var(--tx3); }
+    footer a:hover { color: var(--tx2); }
+
+    @media (max-width: 600px) {
+      nav { padding: 12px 20px; }
+      .wrap { padding: 40px 20px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <span class="nav-logo">Artem Zakrevskii</span>
+  <a class="nav-back" href="/portfolio/plugin.html">← AI Moodboard</a>
+</nav>
+
+<div class="wrap">
+
+  <div class="doc-header">
+    <h1>Privacy Policy</h1>
+    <p class="meta">AI Moodboard Photoshop Plugin · Last updated: March 2025</p>
+  </div>
+
+  <div class="highlight">
+    <strong style="color:#fff">Short version:</strong> This plugin does not collect, store, or transmit any personal data to our servers. All credentials are kept locally on your device.
+  </div>
+
+  <h2>1. About This Application</h2>
+  <p>
+    AI Moodboard is a personal plugin for Adobe Photoshop that helps concept artists create visual reference boards. It uses the Pinterest API to search for reference images based on user-provided prompts.
+  </p>
+  <p>
+    This tool is developed and maintained by Artem Zakrevskii as a personal productivity tool for individual artists.
+  </p>
+
+  <h2>2. Data We Do NOT Collect</h2>
+  <p>We do not collect, process, or store:</p>
+  <ul>
+    <li>Names, email addresses, or any personal identifiers</li>
+    <li>Usage statistics or analytics</li>
+    <li>Search queries or prompts entered by users</li>
+    <li>Images retrieved from Pinterest</li>
+    <li>Device information or IP addresses</li>
+  </ul>
+
+  <h2>3. Local Storage of Credentials</h2>
+  <p>
+    The plugin allows users to enter a Backend URL to connect to a local server. This value is stored exclusively in your browser's <code>localStorage</code> — on your own device — and is never transmitted to any third party or external server controlled by this application.
+  </p>
+
+  <h2>4. Third-Party Services</h2>
+  <p>The plugin connects to the following external services on the user's behalf:</p>
+  <ul>
+    <li>
+      <strong style="color:#fff">Pinterest API</strong> — used to search for reference images.
+      Pinterest's own <a href="https://policy.pinterest.com/en/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a> applies to all interactions with their API.
+    </li>
+    <li>
+      <strong style="color:#fff">Groq API</strong> (optional) — used to generate search queries from user prompts.
+      Groq's own <a href="https://groq.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a> applies.
+    </li>
+    <li>
+      <strong style="color:#fff">Anthropic API</strong> (optional alternative) — Anthropic's <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> applies.
+    </li>
+  </ul>
+  <p>
+    All API keys and tokens for these services are provided by the user, stored locally on their device, and used solely to perform the functions described above.
+  </p>
+
+  <h2>5. Pinterest API Usage</h2>
+  <p>
+    This application uses the Pinterest API to perform read-only image searches (<code>pins:read</code>, <code>boards:read</code> scopes). The plugin does not create, modify, or delete any Pinterest content. It does not access Pinterest user account data, boards, or followers.
+  </p>
+
+  <h2>6. Children's Privacy</h2>
+  <p>
+    This plugin is intended for use by professional and hobbyist artists. It is not directed at children under the age of 13, and we do not knowingly collect any information from children.
+  </p>
+
+  <h2>7. Changes to This Policy</h2>
+  <p>
+    If this policy is updated, the revised version will be published at this URL with a new "Last updated" date. Continued use of the plugin after changes constitutes acceptance of the updated policy.
+  </p>
+
+  <h2>8. Contact</h2>
+  <div class="contact-box">
+    <p>
+      For any questions about this privacy policy, contact:<br><br>
+      <strong style="color:#fff">Artem Zakrevskii</strong><br>
+      Portfolio: <a href="https://artemzakrevskii93-boop.github.io/portfolio/">artemzakrevskii93-boop.github.io/portfolio</a><br>
+      GitHub: <a href="https://github.com/artemzakrevskii93-boop" target="_blank" rel="noopener">github.com/artemzakrevskii93-boop</a>
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  <p><a href="/portfolio/">Artem Zakrevskii</a> · <a href="/portfolio/plugin.html">AI Moodboard</a> · Privacy Policy</p>
+</footer>
+
+</body>
+</html>
